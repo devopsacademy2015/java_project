@@ -21,6 +21,13 @@ pipeline {
                 }
                 }
 
+                
+                    stage ('2c'){
+                        steps {
+                        sleep 10
+                }
+                }
+
             }
           }
             stage('stage3') {
