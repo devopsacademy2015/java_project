@@ -6,37 +6,21 @@ pipeline {
                 sleep 10
                 }
             }
-
+parallel{
             stage('stage2') {
-                parallel {
-                    stage ('2a'){
+               
                         steps {
                         sleep 10
                 }
                 }
 
-                    stage ('2b'){
-                        steps {
-                        sleep 10
-                }
-                }
-
-                
-                    stage ('2c'){
-                        steps {
-                        sleep 10
-                }
-                }
-
-            }
-          }
             stage('stage3') {
                 steps {
                 sleep 10
                 }
             }
 
-
+}
             stage('stage4') {
                 steps {
                 sleep 10
