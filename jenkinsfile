@@ -8,11 +8,21 @@ pipeline {
             }
 
             stage('stage2') {
-                steps {
-                sleep 10
+                parallel {
+                    stage ('2a'){
+                        steps {
+                        sleep 10
                 }
-            }
+                }
 
+                    stage ('2b'){
+                        steps {
+                        sleep 10
+                }
+                }
+
+            }
+          }
             stage('stage3') {
                 steps {
                 sleep 10
