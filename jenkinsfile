@@ -3,11 +3,28 @@ pipeline {
         stages {
             stage('stage1') {
                 steps {
-                sleep 10000000
+                sleep 10
                 }
             }
-            
 
-            
+            stage('stage2') {
+                steps {
+                sleep 10
+                }
+            }
+
+            stage('stage3') {
+                steps {
+                sleep 10
+                }
+            }
+
+
+            stage('stage4') {
+                steps {
+                sleep 10
+                }
+            }
+
         }
 }
