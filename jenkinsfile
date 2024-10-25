@@ -6,7 +6,7 @@ pipeline {
                 sleep 10
                 }
             }
-parallel{
+
             stage('stage2') {
                
                         steps {
@@ -20,7 +20,7 @@ parallel{
                 }
             }
 
-}
+
             stage('stage4') {
                 steps {
                 sleep 10
